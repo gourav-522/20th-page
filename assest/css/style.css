@@ -1,7 +1,3 @@
-body{
-    background-image: url(./images/jungle-background-forest-nature-scene-futuristic-generative-ai\ 1.png);
-    background-size: cover;
-}
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -28,6 +24,11 @@ body{
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
+}
+
+body {
+    background-image: url(/assest/images/jungle-background-forest-nature-scene-futuristic-generative-ai\ 1.png);
+    background-size: cover;
 }
 
 section {
@@ -83,6 +84,7 @@ ul {
 }
 
 .circle {
+    cursor: pointer;
     width: 32px;
     height: 32px;
     gap: 0px;
@@ -101,6 +103,7 @@ ul {
 }
 
 button {
+    cursor: pointer;
     width: 144px;
     height: 51px;
     top: 25px;
@@ -166,10 +169,3 @@ span {
     color: #3B945E;
 }
 
-@media screen and (max-width:576px) {
-        .col-6 {
-                width: 50%;
-                padding-left: 12px;
-                padding-right: 12px;
-}
-}
