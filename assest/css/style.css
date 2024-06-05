@@ -29,19 +29,27 @@
 body {
     background-image: url(/assest/images/jungle-background-forest-nature-scene-futuristic-generative-ai\ 1.png);
     background-size: cover;
+    
 }
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
+}
+.d-flex{
+    display: flex;
 }
 
 .col-6 {
     width: 50%;
     padding-left: 12px;
     padding-right: 12px;
+}
+.p-35{
+    padding: 35px;
+    
 }
 
 ul {
@@ -50,6 +58,12 @@ ul {
 
 .monkey {
     margin-right: 231px;
+}
+header{
+    background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
+}
+footer{
+    background: linear-gradient(180deg, #030D01 0%, rgba(3, 13, 1, 0) 100%);
 }
 
 .li-card {
@@ -157,7 +171,7 @@ button {
     gap: 0px;
     opacity: 0px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 85.54%, rgba(255, 255, 255, 0) 100%);
-
+    margin-top: 126px;
 }
 
 span {
@@ -168,4 +182,67 @@ span {
     text-align: left;
     color: #3B945E;
 }
+.menu-btn{
+    display: none;
+}
+ 
+nav {
+    text-align: center;
+}
 
+.blackline {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.justify-betwn {
+    justify-content: space-between;
+}
+
+.align-iteam-center {
+    align-items: center;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+/*---------------------------------------------responsive------------------------------------------------------*/
+@media (max-width:992px) {
+    .lg-view {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        background-color: blueviolet;
+        position: fixed;
+        top: 0%;
+        right: -100%;
+        z-index: 4;
+    }
+
+    #menubar:checked~ul {
+        right: 0;
+    }
+
+    label[for="menubar"] {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    label[for="menubar"] span {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        z-index: 5;
+    }
+
+    input[type="checkbox"]:checked .lg-view {
+        right: 0%;
+    }
+}
