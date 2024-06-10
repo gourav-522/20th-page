@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0%;
     padding: 0%;
     text-decoration: none;
     box-sizing: border-box;
-    list-style-type: none;
-    color: white;
+    list-style: none;
 }
 
 .container {
@@ -16,6 +12,7 @@
     padding-right: 12px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .row {
@@ -28,50 +25,55 @@
 
 body {
     background-image: url(/assest/images/jungle-background-forest-nature-scene-futuristic-generative-ai\ 1.png);
+
+    background-repeat: no-repeat;
     background-size: cover;
-    
+
+
+}
+
+header {
+
+    background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+footer {
+
+    background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
+
+}
+
+.social {
+    display: flex;
 }
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
 
-.col-6 {
-    width: 50%;
-    padding-left: 12px;
-    padding-right: 12px;
-}
-.p-35{
-    padding: 35px;
-    
+.justify-space {
+    justify-content: space-between;
 }
 
-ul {
-    display: flex;
+.align-item {
+    align-items: center;
 }
 
-.monkey {
-    margin-right: 231px;
-}
-header{
-    background: linear-gradient(180deg, #000000 36.19%, rgba(0, 0, 0, 0) 100%);
-}
-footer{
-    background: linear-gradient(180deg, #030D01 0%, rgba(3, 13, 1, 0) 100%);
-}
+.gap46 {
+    gap: 46px;
 
-.li-card {
-    display: flex;
 }
 
 .home {
-    font-family: "Fira Sans", sans-serif;
+    font-family: Fira Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -80,44 +82,29 @@ footer{
 }
 
 .light {
-    font-family: "Fira Sans", sans-serif;
-    margin-left: 46px;
-
+    font-family: Fira Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
-    opacity: 70%;
     color: #FFFFFF;
-
-}
-
-.social {
-    display: flex;
-    margin-left: 60px;
+    opacity: 70%;
 }
 
 .circle {
-    cursor: pointer;
     width: 32px;
     height: 32px;
     gap: 0px;
     border: 1px;
-    border: 1px solid #FFFFFF;
     opacity: 0px;
+    border: 1px solid #FFFFFF;
     border-radius: 46px;
-    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.ml8 {
-    margin-left: 8px;
-}
-
 button {
-    cursor: pointer;
     width: 144px;
     height: 51px;
     top: 25px;
@@ -127,15 +114,25 @@ button {
     border-radius: 36px;
     opacity: 0px;
     background: #FFC20A;
-    color: white;
+    font-family: Dela Gothic One;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.17px;
+    text-align: center;
+    color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 32px;
+    border: 0px;
+    z-index: 10;
+}
+
+.w-100 {
+    width: 100%;
 }
 
 .line1 {
-    font-family: "Fira Sans", sans-serif;
+    font-family: Roboto;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
@@ -144,17 +141,25 @@ button {
 }
 
 .line2 {
-    font-family: "Fira Sans", sans-serif;
+    font-family: Exo 2;
     font-size: 64px;
     font-weight: 700;
     line-height: 76.8px;
     text-align: left;
-    margin-bottom: 16px;
+    color: #3B945E;
 }
 
-.lin3 {
+span {
+    font-family: Exo 2;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+    text-align: left;
+    color: #FFFFFF;
+}
 
-    font-family: "Fira Sans", sans-serif;
+.line3 {
+    font-family: Fira Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -162,49 +167,69 @@ button {
     color: #FFFFFF;
 }
 
-.box {
-    width: 647px;
-    height: 383px;
-    top: -1241px;
-    left: 4303px;
-    padding: 32px 8px 32px 8px;
-    gap: 0px;
-    opacity: 0px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 85.54%, rgba(255, 255, 255, 0) 100%);
-    margin-top: 126px;
+.box1 {
+    margin-top: 97px;
 }
 
-span {
-    font-family: "Fira Sans", sans-serif;
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 76.8px;
-    text-align: left;
-    color: #3B945E;
-}
-.menu-btn{
-    display: none;
-}
- 
-nav {
-    text-align: center;
+.box2 {
+    margin-top: 40px;
 }
 
-.blackline {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+.gap8 {
+    gap: 8px;
 }
 
-.justify-betwn {
-    justify-content: space-between;
+@media (max-width:992px) {
+    .lg-view {
+        flex-direction: column;
+        width: 320px;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        background-color: lawngreen;
+        position: fixed;
+        top: 0%;
+        right: -100%;
+        z-index: 4;
+        transition: all 0.3s;
+    }
+
+    .ml407 {
+        margin-right: 0;
+    }
+
+    label[for="menubar"] {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+    }
+
+    label[for="menubar"] span {
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        z-index: 5;
+    }
+
+    input[type="checkbox"]:checked~.lg-view {
+        right: 0;
+    }
+
 }
 
-.align-iteam-center {
-    align-items: center;
-}
 
-.gap-30 {
-    gap: 30px;
+@media (max-width:576px) {
+    .col-12{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
 }
